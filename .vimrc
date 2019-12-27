@@ -12,6 +12,7 @@ Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'crusoexia/vim-monokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-commentary'
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install
 " script
 
@@ -38,6 +39,9 @@ set number relativenumber
 " Open NERDTree automatically when vin starts up using vim 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Close NERDTree when opening a file
+let NERDTreeQuitOnOpen=1
 
 " Map NERDTree open/close
 map <C-n> :NERDTreeToggle<CR>
