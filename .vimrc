@@ -30,6 +30,13 @@ call plug#end()
 syntax on
 colorscheme monokai
 
+" normal mode: save
+nnoremap <c-s> :w<CR> 
+" insert mode: escape to normal and save
+inoremap <c-s> <Esc>:w<CR>
+" visual mode: escape to normal and save
+vnoremap <c-s> <Esc>:w<CR> 
+
 " Background transparent
 hi Normal guibg=NONE ctermbg=NONE
 

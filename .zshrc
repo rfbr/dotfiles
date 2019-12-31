@@ -115,3 +115,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# enable control-s and control-q
+stty start undef
+stty stop undef
+setopt noflowcontrol
