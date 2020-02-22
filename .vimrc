@@ -9,6 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'crusoexia/vim-monokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
