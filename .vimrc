@@ -14,6 +14,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'crusoexia/vim-monokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
+Plug 'itchyny/lightline.vim'
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install
 " script
 Plug 'joshdick/onedark.vim'
