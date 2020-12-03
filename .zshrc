@@ -119,3 +119,6 @@ unset __conda_setup
 stty start undef
 stty stop undef
 setopt noflowcontrol
+
+# Julia path
+export PATH="$PATH:/opt/julia-1.3.1/bin"
