@@ -38,6 +38,6 @@ local plugins = {
       require("gitsigns").setup(opts)
       require "custom.configs.gitsigns"
     end,
-  }
+  },
 }
 return plugins
