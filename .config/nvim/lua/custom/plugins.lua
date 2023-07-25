@@ -32,12 +32,17 @@ local plugins = {
   },
   {
     "lewis6991/gitsigns.nvim",
-
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "git")
       require("gitsigns").setup(opts)
       require "custom.configs.gitsigns"
     end,
   },
+  {
+    "hkupty/iron.nvim",
+    config = function()
+      require "custom.configs.ironconfig"
+    end,
+  }
 }
 return plugins
