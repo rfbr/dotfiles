@@ -40,9 +40,18 @@ local plugins = {
   },
   {
     "hkupty/iron.nvim",
+    ft = {"python"},
     config = function()
       require "custom.configs.ironconfig"
     end,
+  },
+  {
+    "scalameta/nvim-metals",
+    name = "metals",
+    ft = { "scala", "sbt", "java" },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
   }
 }
 return plugins
