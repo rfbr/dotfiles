@@ -4,7 +4,9 @@ local opts = {
   sources = {
     null_ls.builtins.diagnostics.mypy,
     null_ls.builtins.diagnostics.pylint,
-    null_ls.builtins.formatting.black.with({extra_args = {"--line-length 120"}}),
+    null_ls.builtins.formatting.black.with({
+          extra_args = {"--line-length=120", "--skip-string-normalization"},
+        }),
     null_ls.builtins.formatting.isort,
   },
   on_attach = function(client, bufnr)
