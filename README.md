@@ -45,6 +45,10 @@ brew install tmux
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+## Install tmux plugins
+```bash
+<tmux prefix key> I
+```
 # Installing neovim
 ```bash
 brew install neovim
