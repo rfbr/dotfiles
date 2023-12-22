@@ -61,3 +61,9 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 ```bash
 brew install ripgrep
 ```
+## Symbolic links
+```bash
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.config/nvim/lua/custom ~/.config/nvim/lua/custom
+ln -s ~/dotfiles/.config/tmux ~/.config/tmux
+```
