@@ -100,7 +100,39 @@ local plugins = {
       {'<leader>me', function() require "telescope".extensions.metals.commands() end, desc="Metals commands"},
       {'<leader>mc', function() require "metals".compile_cascade() end, desc="Metals compile cascade"},
       {'<leader>mw', function() vim.lsp.buf.add_workspace_folder() end, desc="Metals add workspace"},
-      {'<leader>gd', function() vim.lsp.buf.definition() end, desc="Metals goto definition"}
+      {'<leader>gd', function() vim.lsp.buf.definition() end, desc="Metals goto definition"},
+      {'<leader>ls', function() vim.lsp.buf.signature_help() end, desc="Metals signature help"},
+      {'<leader>ra', function() require("nvchad.renamer").open() end, desc="Metals LSP rename"},
+      {'<leader>gr', function() vim.lsp.buf.references()  end, desc="Metals references"},
+      {'<leader>lf',
+      function()
+        vim.diagnostic.open_float { border = "rounded" }
+      end,
+      "Metals Floating diagnostic",
+      },
+      {"[d",
+      function()
+        vim.diagnostic.goto_prev { float = { border = "rounded" } }
+      end,
+      "Goto prev",
+      },
+
+      {"]d",
+      function()
+        vim.diagnostic.goto_next { float = { border = "rounded" } }
+      end,
+      "Goto next",
+    },
+    {"<leader>q",
+      function()
+        vim.diagnostic.setloclist()
+      end,
+      "Diagnostic setloclist",
+    },
+    {"<leader>ws",
+      function()
+        require("metals").hover_worksheet()
+      end, "Metals worksheet hover"}
     },
     config = function()
       local metals = require("metals")
