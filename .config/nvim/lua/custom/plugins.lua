@@ -30,6 +30,10 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        -- js/ts
+        "typescript-language-server",
+        "eslint-lsp",
+        "prettier"
       }
     }
   },
