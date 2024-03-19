@@ -7,10 +7,6 @@
 ```bash
 brew install alacritty
 ```
-## Install Catppucin theme
-```bash
-git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
-```
 
 # ZSH installation
 ```bash
@@ -55,7 +51,7 @@ brew install neovim
 ```
 ## Installing NvChad 
 ```bash
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 ```
 ### Ripgrep is needed by Telescope
 ```bash

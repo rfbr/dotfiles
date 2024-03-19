@@ -4,6 +4,7 @@ local plugins = {
     lazy = false,
   },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "nvim-neotest/nvim-nio" },
   {
     "neovim/nvim-lspconfig",
     config = function()
