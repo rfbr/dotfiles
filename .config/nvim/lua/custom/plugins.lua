@@ -18,6 +18,32 @@ local plugins = {
     lazy = false,
   },
   {
+    'saecki/crates.nvim',
+    ft = {"toml"},
+    config = function(_, opts)
+      local crates  = require('crates')
+      crates.setup(opts)
+      require('cmp').setup.buffer({
+        sources = { { name = "crates" }}
+      })
+      crates.show()
+      require("core.utils").load_mappings("crates")
+    end,
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function()
+      local M = require "plugins.configs.cmp"
+      M.completion.completeopt = "menu,menuone,noselect"
+      M.mapping["<CR>"] = cmp.mapping.confirm {
+        behavior = cmp.ConfirmBehavior.Insert,
+        select = false,
+      }
+      table.insert(M.sources, {name = "crates"})
+      return M
+    end,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
@@ -34,7 +60,9 @@ local plugins = {
         -- js/ts
         "typescript-language-server",
         "eslint-lsp",
-        "prettier"
+        "prettier",
+        -- rust
+        "rust-analyzer",
       }
     }
   },
@@ -94,6 +122,22 @@ local plugins = {
     "mfussenegger/nvim-dap",
     config = function(_, _)
       require("core.utils").load_mappings("dap")
+    end
+  },
+  {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function ()
+      vim.g.rustfmt_autosave = 1
+    end
+  },
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^4",
+    ft = { "rust" },
+    dependencies = "neovim/nvim-lspconfig",
+    config = function()
+      require "custom.configs.rustaceanvim"
     end
   },
   {
