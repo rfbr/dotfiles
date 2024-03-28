@@ -12,7 +12,7 @@ local opts = {
     -- cpp
     null_ls.builtins.formatting.clang_format,
     -- js/ts
-    null_ls.builtins.diagnostics.eslint,
+    require("none-ls.diagnostics.eslint"),
     null_ls.builtins.formatting.prettier,
   },
   on_attach = function(client, bufnr)
