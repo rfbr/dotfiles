@@ -75,20 +75,16 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```bash
 brew install neovim
 ```
-
-## Installing NvChad
-
+# Install NVChad dependencies
 ```bash
-git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+brew install ripgrep luarocks coursier
+```
+# Install Bottom
+```bash
+cargo install bottom
 ```
 
-### Ripgrep is needed by Telescope
-
-```bash
-brew install ripgrep
-```
-
-## Symbolic links
+# Symbolic links
 
 ```bash
 rm ~/.zshrc
