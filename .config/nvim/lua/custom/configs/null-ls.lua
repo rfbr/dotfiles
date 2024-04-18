@@ -4,9 +4,11 @@ local opts = {
   sources = {
     -- python
     null_ls.builtins.diagnostics.mypy,
-    null_ls.builtins.diagnostics.pylint,
+    null_ls.builtins.diagnostics.pylint.with({
+          extra_args = {"--max-line-length=120"},
+        }),
     null_ls.builtins.formatting.black.with({
-          extra_args = {"--line-length=120", "--skip-string-normalization"},
+          extra_args = {"-l 120", "--preview" },
         }),
     null_ls.builtins.formatting.isort,
     -- cpp
