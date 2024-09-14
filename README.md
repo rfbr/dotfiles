@@ -90,7 +90,7 @@ cargo install bottom
 rm ~/.zshrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 rm -r ~/.config/nvim/lua/custom
-ln -s ~/dotfiles/.config/nvim/lua/custom ~/.config/nvim/lua/custom
+ln -s ~/dotfiles/.config/nvim ~/.config
 rm -r ~/.config/tmux
-ln -s ~/dotfiles/.config/tmux ~/.config/tmux
+ln -s ~/dotfiles/.config/tmux ~/.config
 ```
