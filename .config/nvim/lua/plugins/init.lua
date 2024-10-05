@@ -16,23 +16,6 @@ return {
   },
 
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        -- lua
-        "lua-language-server",
-        "stylua",
-        -- python
-        "isort",
-        "pyright",
-        "ruff",
-        -- csharp
-        "omnisharp",
-      },
-    },
-  },
-
-  {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     opts = {

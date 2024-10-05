@@ -14,4 +14,16 @@ M.ui = {
 
 M.lsp = { signature = false }
 
+M.mason.pkgs = {
+    -- lua
+    "lua-language-server",
+    "stylua",
+    -- python
+    "isort",
+    "pyright",
+    "ruff",
+    -- csharp
+    "omnisharp",
+}
+
 return M
