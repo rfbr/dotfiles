@@ -4,17 +4,18 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
-    theme = "catppuccin",
-    -- hl_override = {
-    --     Comment = { italic = true },
-    --     ["@comment"] = { italic = true },
-    -- },
+M.base46 = {
+  theme = "catppuccin",
+  -- hl_override = {
+  --     Comment = { italic = true },
+  --     ["@comment"] = { italic = true },
+  -- },
 }
 
 M.lsp = { signature = false }
 
-M.mason.pkgs = {
+M.mason = {
+  pkgs = {
     -- lua
     "lua-language-server",
     "stylua",
@@ -24,6 +25,7 @@ M.mason.pkgs = {
     "ruff",
     -- csharp
     "omnisharp",
+  },
 }
 
 return M
