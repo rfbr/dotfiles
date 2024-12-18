@@ -25,6 +25,8 @@ M.mason = {
     "ruff",
     -- csharp
     "omnisharp",
+    -- yaml
+    "yamlfix",
   },
 }
 
