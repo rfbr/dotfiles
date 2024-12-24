@@ -29,6 +29,7 @@ return {
         "scala",
         "python",
         "c_sharp",
+        "cpp",
         "yaml",
       },
     },

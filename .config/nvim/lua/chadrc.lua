@@ -27,6 +27,9 @@ M.mason = {
     "omnisharp",
     -- yaml
     "yamlfix",
+    -- cpp
+    "clangd",
+    "clang-format",
   },
 }
 
