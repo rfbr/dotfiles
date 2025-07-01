@@ -1,6 +1,7 @@
 require "nvchad.mappings"
 
 local map = vim.keymap.set
+local gs = require "gitsigns"
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
@@ -13,6 +14,8 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "<leader>hs", gs.stage_hunk, { desc = "Git Stage Hunk" })
+map("n", "<leader>hr", gs.undo_stage_hunk, { desc = "Git Undo Stage Hunk" })
 map('n', '<leader>f', function()
     -- If we find a floating window, close it.
     local found_float = false
