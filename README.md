@@ -87,9 +87,11 @@ cargo install bottom
 # Symbolic links
 
 ```bash
-rm ~/.zshrc
+rm -f ~/.zshrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
-rm -r ~/.config/nvim/lua/custom
+rm -rf ~/.config/alacritty
+ln -s ~/dotfiles/.config/alacritty ~/.config
+rm -rf ~/.config/nvim
 ln -s ~/dotfiles/.config/nvim ~/.config
 rm -r ~/.config/tmux
 ln -s ~/dotfiles/.config/tmux ~/.config
