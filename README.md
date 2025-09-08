@@ -70,7 +70,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 # Installing neovim
-
 ```bash
 brew install neovim
 ```
@@ -84,6 +83,11 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 cargo install bottom
 ```
 
+# Install nvm and node
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+nvm install 22
+```
 # Symbolic links
 
 ```bash
