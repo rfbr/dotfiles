@@ -76,7 +76,7 @@ brew install neovim
 ```
 # Install NVChad dependencies
 ```bash
-brew install ripgrep luarocks coursier
+brew install ripgrep luarocks coursier rust
 ```
 # Install Bottom
 ```bash
