@@ -44,7 +44,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # JetBrains Mono Nerd font
 
 ```bash
-brew tap homebrew/cask-fonts &&
 brew install --cask font-jetbrains-mono-nerd-font
 ```
 
