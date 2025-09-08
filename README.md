@@ -45,7 +45,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```bash
 brew tap homebrew/cask-fonts &&
-brew install --cask font-<FONT NAME>-nerd-font
+brew install --cask font-jetbrains-mono-nerd-font
 ```
 
 OR
