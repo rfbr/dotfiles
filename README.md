@@ -74,9 +74,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```bash
 brew install neovim
 ```
-# Install NVChad dependencies
+# Install NVChad
 ```bash
-brew install ripgrep luarocks coursier rust
+brew install ripgrep luarocks coursier rust  &&
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
 # Install Bottom
 ```bash
