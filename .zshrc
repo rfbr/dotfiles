@@ -78,7 +78,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[yellow]%}%m%{$reset_color%} %{$fg[cyan]%}%c%{$reset_color%}"
+PROMPT+=' $(git_prompt_info)'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
