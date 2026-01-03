@@ -23,13 +23,13 @@ M.mason = {
     "isort",
     "pyright",
     "ruff",
-    -- csharp
-    "omnisharp",
     -- yaml
     "yamlfix",
     -- cpp
     "clangd",
     "clang-format",
+    -- rust
+    "rust-analyzer",
   },
 }
 

@@ -1,6 +1,7 @@
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 vim.lsp.enable "clangd"
+vim.lsp.enable "rust_analyzer"
 
 -- Configure pyright
 vim.lsp.config.pyright = {
