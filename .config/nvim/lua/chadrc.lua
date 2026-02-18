@@ -16,6 +16,8 @@ M.lsp = { signature = false }
 
 M.mason = {
   pkgs = {
+    -- tree sitter
+    "tree-sitter-cli",
     -- lua
     "lua-language-server",
     "stylua",
